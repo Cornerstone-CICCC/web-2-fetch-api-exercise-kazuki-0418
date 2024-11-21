@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather API</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  // YOUR HTML HERE
+  <table>
+    <caption>
+      Weather forecast
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Temperature</th>
+        <th scope="col">Wind Speed</th>
+        <th scope="col">Timezone</th>
+        <th scope="col">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" id="temperature"></th>
+        <td id="wind-speed"></td>
+        <td id="timezone"></td>
+        <td id="time"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p id="loading"></p>
 
   <script src="./app.js"></script>
 </body>
+
 </html>
